@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">YackeenTest</string>
+    <string name="error_message">Unable to Load data!</string>
+</resources>
