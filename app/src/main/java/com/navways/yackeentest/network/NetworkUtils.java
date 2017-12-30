@@ -16,6 +16,9 @@ import java.net.URL;
  */
 
 public class NetworkUtils {
+    
+    private statice final String NYT_KEY="YOUR KEY";
+    private statice final String OPEN_WEATHER_KEY="YOUR KEY";
 
     public static boolean isInternetConnected(Context context){
         ConnectivityManager manager = (ConnectivityManager)
@@ -26,7 +29,7 @@ public class NetworkUtils {
     }
     // Stories
     private static final String NY_BASE_URL
-            = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=6299eef293154f9da7040a54c5a828c9";
+            = "https://api.nytimes.com/svc/topstories/v2/home.json?api-key="+NYT_KEY;
     public static StringBuilder storiesJsonStringBuilder(){
         HttpURLConnection urlConnection = null;
         BufferedReader bufferedReader = null;
@@ -53,7 +56,7 @@ public class NetworkUtils {
     }
     // Weather Forecast
     private static final String WEATHER_BASE_URL
-            = "http://samples.openweathermap.org/data/2.5/forecast?lat=30.105442&lon=31.328697&appid=b6907d289e10d714a6e88b30761fae22";
+            = "http://samples.openweathermap.org/data/2.5/forecast?lat=30.105442&lon=31.328697&appid="+OPEN_WEATHER_KEY;
     public static StringBuilder forecastJsonStringBuilder(){
         HttpURLConnection urlConnection = null;
         BufferedReader bufferedReader = null;
