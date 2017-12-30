@@ -17,8 +17,8 @@ import java.net.URL;
 
 public class NetworkUtils {
     
-    private statice final String NYT_KEY="YOUR KEY";
-    private statice final String OPEN_WEATHER_KEY="YOUR KEY";
+    private static final String NYT_KEY="YOUR KEY";
+    private static final String OPEN_WEATHER_KEY="YOUR KEY";
 
     public static boolean isInternetConnected(Context context){
         ConnectivityManager manager = (ConnectivityManager)
